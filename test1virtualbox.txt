@@ -1,0 +1,46 @@
+//orden : ab -n1000 -c50 http://10.0.2.15:8080/ > test1virtualbox.txt
+// 1GB de ram - 1 procesador
+
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.0.2.15 (be patient)
+
+
+Server Software:        localhost
+Server Hostname:        10.0.2.15
+Server Port:            8080
+
+Document Path:          /
+Document Length:        1769 bytes
+
+Concurrency Level:      50
+Time taken for tests:   2.173 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1844000 bytes
+HTML transferred:       1769000 bytes
+Requests per second:    452.58 [#/sec] (mean)
+Time per request:       118.646 [ms] (mean)
+Time per request:       2.173 [ms] (mean, across all concurrent requests)
+Transfer rate:          855.31 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        4   14   5.3     16      27
+Processing:     9   31  13.3     30      58
+Waiting:        9   22   9.2     20      41
+Total:         20   45  15.3     44      74
+
+Percentage of the requests served within a certain time (ms)
+  50%     44
+  66%     56
+  75%     61
+  80%     64
+  90%     64
+  95%     65
+  98%     70
+  99%     74
+ 100%     74 (longest request)

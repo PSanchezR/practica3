@@ -1,0 +1,46 @@
+// orden -> ab -n1000 -c50 http://192.168.131.129:8080/ > test1vmware.txt
+// 1 GB de ram - 1 procesador
+
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.131.129 (be patient)
+
+
+Server Software:        localhost
+Server Hostname:        192.168.131.129
+Server Port:            8080
+
+Document Path:          /
+Document Length:        1769 bytes
+
+Concurrency Level:      50
+Time taken for tests:   2.103 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1844000 bytes
+HTML transferred:       1769000 bytes
+Requests per second:    47.54 [#/sec] (mean)
+Time per request:       1051.744 [ms] (mean)
+Time per request:       2.103 [ms] (mean, across all concurrent requests)
+Transfer rate:          854.61 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.1      0       6
+Processing:     1   26 65.7      3   20603
+Waiting:        0   26 65.7      3   20603
+Total:          3   27 65.7      3   20603
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      4
+  80%      4
+  90%     10
+  95%     13
+  98%     30
+  99%     32
+ 100%  20603 (longest request)
