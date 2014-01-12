@@ -1,0 +1,54 @@
+## -*- coding: utf-8 -*-
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+
+        <link rel="stylesheet" href="/static/style.css" type="text/css" media="screen">
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      google.load('visualization', '1.0', {'packages':['corechart']});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+	var datos = new google.visualization.DataTable();
+	datos.addColumn('string', 'campo');
+        datos.addColumn('number', 'valor');
+	nombre_grafico = prompt("Introduce el nombre del gráfico","");
+	numero_datos= prompt("¿Cuántos datos desea introducir?","");
+	numero_datos = parseInt(numero_datos);
+
+	for(i = 0; i < numero_datos;i++)
+	{
+		nombre = prompt("Introduzca el nombre del campo");
+		valor = prompt("Introduzca el valor numérico del campo");
+		valor = parseInt(valor);	
+		datos.addRows([[nombre,valor]]);
+		
+	}
+  
+        var opciones = {'title':nombre_grafico,
+                       'width':720,
+                       'height':480};
+
+        var chart = new google.visualization.PieChart(document.getElementById('charts'));
+        chart.draw(datos, opciones);
+      }
+    </script>
+
+
+</head>
+<body>
+ 
+     <header>
+    	<div class="row-top">
+            	<div class="wrapper">
+                	<h1>
+			<a><img class="imagen" src="/static/pirate-47705_640.png"/>Práctica 3</a>
+			</h1>
+                </div>
+		
+        </div>
+    </header>
