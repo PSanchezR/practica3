@@ -1,0 +1,152 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+
+/* Global properties ======================================================== */
+
+body {font-family: Helvetica, sans-serif;font-size:100%; color:#7f7f7f;min-width:960px;background:#000}
+
+.bg {width:100%; background:url(/images/bg-top.jpg) center 0 no-repeat;}
+
+
+.container {
+	width:940px; 	
+	padding:0;
+	margin:0 auto;
+}
+
+
+.imagen
+{
+    max-width: 400px;
+    max-height: 400px;
+}
+a {color:#7f7f7f; outline:none;}
+a:hover {text-decoration:none;}
+
+
+.wrapper {width:100%; overflow:hidden;}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+ 
+.color-1 {color:#fff;}
+.color-2 {color:#c42e02;}
+.color-3 {color:#769e02 !important;}
+
+.img-border {border:10px solid #fff;}
+
+
+/*********************************header*************************************/
+header {
+	width:100%;
+	background:#f2f2f2;
+	position:relative; 
+	z-index:2;
+}
+
+.row-top {
+	width:100%;
+	padding:10px 0;
+	background:#000;
+}
+
+h1 {
+	padding:0px 0 0 10px; 
+	float:left;
+}
+	h1 a {
+		display:inline-block;
+		font-size:50px;
+		font-weight:normal;
+		line-height:1.4em;
+		color:#fff;
+		letter-spacing:-3px;
+		margin-top:-10px;
+	}
+		h1 a span {color:#c52e02}
+		
+h2 {
+	font-size:45px;
+	font-weight:normal;
+	
+	color:#000;
+	text-align:center;
+	font-family:Helvetica, sans-serif; 
+}
+	h2 span {color:#000;}
+	#page1 h2 {margin-bottom:9px;}
+
+
+/*********************************content*************************************/
+#content {
+	width:100%; 
+	padding:15px 0 50px;
+	background:#f2f2f2;
+	position:relative;
+	z-index:1;
+}
+
+.formulario
+{
+	text-align: center;
+	margin-left: 180px;
+}
+h3 {
+	font-size:24px; 
+	line-height:2em; 
+	color:#404040;
+	font-weight:normal;
+	letter-spacing:-1px;
+	margin-bottom:5px;
+}
+h5 {margin-bottom:2px;}
+h6 {
+	color:#769e02;
+	font-size:18px;
+}
+
+.menu
+{
+	color:#769e02;
+}
+.columna-1
+{
+	width: 180px;
+	float:left;
+	
+}	
+.columna-2
+{
+	width: 200px;
+	margin-left:190px;
+
+}
+
+
+
+#map-canvas { height:480px; width: 720px; background:#f2f2f2;}
+#charts { height:480px; width: 720px; background:#f2f2f2;}		
+/****************************footer************************/
+footer {
+	width:100%; 
+	padding:23px 0 30px;
+	color:#fff;
+}
+	footer a {color:#c42e02;}
+	footer span {display:block;}
+	footer .main {font-size:14px; line-height:25px;}
+
+.list-services {
+	padding:0;
+}
+	.list-services li {
+		float:left; 
+		padding:0 0 0 10px;
+	}
